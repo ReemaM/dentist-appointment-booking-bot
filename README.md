@@ -2,18 +2,18 @@
 
 This is a simple chatbot that can assist you in booking dentist appointments. Functionalities include greeting users in their timezone, simplified dental appointment booking and also introduces user to entities-regular expression pattern matching.  
 
-## IBM Watson® Conversation
-IBM Watson® Conversation is a question-and-answer system that provides a dialog interaction
+## IBM Watson® Assistant
+IBM Watson® Assistant is a question-and-answer system that provides a dialog interaction
 between the conversation system and users. This style of interaction is commonly called a
 chatbot
 
 Now, let's build the conversation!
 
-## Task 1: Login to your IBM Cloud account & create Conversation service
+## Task 1: Login to your IBM Cloud account & create Assistant service
 
 1. Login to your IBM Cloud account, if you don't have one already you can [singup here](https://ibm.biz/BdZift).
 2. Open the Catalog, click on **Watson** to refine search.
-3. Scroll down and click on **Conversation** service.
+3. Scroll down and click on **Assistant** service.
 4. Click on **Create** to create an instance of the service. Make sure you choose an **organization** and **space**.
 5. Click on **Launch tool** to open the tool.
 
@@ -46,32 +46,33 @@ Here we are going to crete two intents. For each intent, we will add examples to
 
 ## Task 4: Create your entities
 Entity is a portion of the user's input that you can use to provide a
-different response to a particular intent. Click Entities. On the Entities page, click Create new.
+different response to a particular intent. 
+1. Click **Entities**, then on the Entities page, click **Create new**.
 
 Each entity definition includes a set of specific entity values that can be used to trigger different
 responses. Each value can have multiple synonyms that define different ways that the same value
 can be specified in user input. Create entities to represent to the application what the user wants to access. Fuzzy logic is a
-feature that allows Watson Conversation to accept misspelled words. You can enable this feature
+feature that allows Watson Assistant to accept misspelled words. You can enable this feature
 at the entity level.
 
-1. Under **My entities tab**, add your first entity and call it **@personal_details**.
-2. Click **Create** to create the entity.
-3. Enter value **emailid**.
-4. Switch synonyms to patterns, and add this regular expression <b>^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$</b> to identify emails.
-5. When you are done adding, click the arrow to save and go back.
+2. Under **My entities tab**, add your first entity and call it **@personal_details**.
+3. Click **Create** to create the entity.
+4. Enter value **emailid**.
+5. Switch synonyms to patterns, and add this regular expression <b>^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$</b> to identify emails.
+6. When you are done adding, click the arrow to save and go back.
 
 ![](https://github.com/Deemaalamer/Dentist-Appointment-Booking-Bot/blob/master/images/bot5.gif)
 
-6. Add your second entity and call it **@reason_for_visit**.
-7. Click **Create** to create the entity.
+7. Add your second entity and call it **@reason_for_visit**.
+8. Click **Create** to create the entity.
 
 ![](https://github.com/Deemaalamer/Dentist-Appointment-Booking-Bot/blob/master/images/bot6.gif)
 
-8. Add values such as: filling, gum problem, tooth cleaning, toothache etc. Also don't forget to add synonyms.
+9. Add values such as: filling, gum problem, tooth cleaning, toothache etc. Also don't forget to add synonyms.
 
 ![](https://github.com/Deemaalamer/Dentist-Appointment-Booking-Bot/blob/master/images/bot7.PNG)
 
-9. Under **System entities**, turn **@sys-time, @sys-date and @sys-number** on. This will allow the bot to detect dates, time and numbers.
+10. Under **System entities**, turn **@sys-time, @sys-date and @sys-number** on. This will allow the bot to detect dates, time and numbers.
 
 ![](https://github.com/Deemaalamer/Dentist-Appointment-Booking-Bot/blob/master/images/bot8.gif)
 
@@ -144,7 +145,7 @@ You may even incorporate more details and improve the bot, the floor is yours.
 
 1. If you don't have Install Nodejs http://blog.teamtreehouse.com/install-node-js-npm-windows
 2. **"Clone or Download** [Basic Conversation](https://github.com/lccmachado/Basic-Conversation) \repository.
-3. Take note of Watson Conversation Service's **Credentials** and **workspace id**
+3. Take note of Watson Assistant Service's **Credentials** and **workspace id**
 4. Edit the file **app.js** and fill the fields **username**, **password** and **workspace_id** with the data
 collected in the last step.
 5. Open a terminal/console and change the directory where you downloaded your code.
@@ -159,14 +160,14 @@ You completed the tutorial. **Congratulations!**
 
 In this tutorial, you completed these tasks:
 
-1. Created a Watson conversation service.
+1. Created a Watson Assistant service.
 2. Created a workspace
 3. Created intents and entities
 4. Built a dialog
 5. Trained and tested a cognitive chatbot
 6. Linked your trained bot to a UI
 
-This tutorial scratches the surface of many of the capabilities of IBM Watson Conversation.
+This tutorial scratches the surface of many of the capabilities of IBM Watson Assistant.
 
 ## Contributors
 
